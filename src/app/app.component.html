@@ -1,6 +1,9 @@
 <h2>Agrega una imagen para reconocer su texto</h2>
 <div>
   <input type="file" (change)="onFileSelected($event)" accept="image/*" />
-  <p>Texto encontrado:</p>
+  <p>Progreso: {{  progressLabel + ' ' + progressNr + '%' }}</p> 
+  <p>Texto encontrado:</p> 
   <textarea rows="10" cols="50">{{ extractedText }}</textarea>
 </div>
+
+
